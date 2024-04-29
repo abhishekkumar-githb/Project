@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/ImageScroll.css">
+    <link rel="stylesheet" href="./css/marquee.css">
+    <link rel="stylesheet" href="./css/page3.css">
+    <link rel="stylesheet" href="./css/PG5.css">
+    <link rel="stylesheet" href="./css/slidetext.css">
+    <link rel="stylesheet" href="./css/message.css">
+</head>
+<body >
+    
+<!--1 add nav bar + video -->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">
+        <img  src="./images/logo-Photoroom.png-Photoroom.png" alt="">
+      </a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">CodingLab</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links" id="btns">
+          <li><a href="#"  id="btns" class="btn">HOME</a></li>
+          <li><a href="#"  id="btns" class="btn">HOME</a></li>
+          <li>
+            <a href="#"  id="btns" class="btn">HTML & CSS</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Login Forms</a></li>
+              <li><a href="#">Card Design</a></li>
+        
+            
+          </li>
+        
+        
+      
+      </div>
+       
+        </ul>
+      </div>
+    
+    </div>
+  </nav>
+
+    <!-- Boxicons CDN Link -->
+    <video autoplay loop muted src="./video/Y2Mate.is-PLEXUS-Background-9s9U8wDQC48-1080p-1654824658591.mp4"></video>
+    <div id="main">
+        <div id="page1"></div>
+    </div>
+
+
+
+    
+
+   <!-- 2-add second page -->
+
+   <div>
+    <div class="scroll-bar"></div>
+    <br>
+    
+    <section  class="scroll-images ok">
+        <img loading="lazy" src="images/image1.png" alt="Image 1">
+        <img loading="lazy" src="images/Image2.webp" alt="Image 2">
+        <img loading="lazy" src="images/Image3.webp" alt="Image 3">
+    </section>
+    <div id="products" class="secondpage">
+        <h2 >Our Products</h2>
+        <a  href="product1.html" class="category cat ">
+            <div>
+                <img style="height: 100px;" src="images/product1.webp" alt="Product 1">
+                <h3>Power Conditioning Products</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </a>
+        <a href="product2.html" class="category ">
+            <div>
+                <img  style="height: 100px;" src="images/product2.jpg" alt="Product 2">
+                <h3>LED Drivers & SMPS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </a>
+      </div>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var productsSection = document.getElementById('products');
+            var windowHeight = window.innerHeight;
+            var sectionTop = productsSection.getBoundingClientRect().top;
+
+            // Show categories when scrolling to products section
+            if (sectionTop < windowHeight * 0.75) {
+                var categories = document.querySelectorAll('.category');
+                categories.forEach(function(category) {
+                    category.classList.add('here');
+                });
+            } else {
+                var categories = document.querySelectorAll('.category');
+                categories.forEach(function(category) {
+                    category.classList.remove('here');
+                });
+            }
+        });
+    </script>
+    <script>
+        var images = document.querySelectorAll('.scroll-images img');
+        var currentImageIndex = 0;
+
+        function showNextImage() {
+            images[currentImageIndex].style.display = 'none'; // Hide current image
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Increment the current image index
+            images[currentImageIndex].style.display = 'block'; // Show next image
+        }
+
+        setInterval(showNextImage, 3000); // Change image every 2 seconds
+    </script>
+</div>
+
+
+
+   <!-- 3- add runnig text -->
+<br><br><br><br>
+
+
+<div class="marquee-container">
+    <marquee behavior="" direction="" style="gap: 10px;">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/north.png	" 
+    alt="">
+
+    <img width="200" 
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/pca.png" 
+    alt="">
+
+    <img width="200" 
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/redu.png"
+    alt="">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/black.png"
+    alt="">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/broadc.png"
+    alt="">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/coc.png"
+    alt="">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/gran.png"
+     alt="">
+   
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/made.png" 
+    alt="">
+
+    <img width="200"
+    src="https://cdn-lhdnf.nitrocdn.com/TeArlhjlqTkKrWTLSbzTonMSnKXIRoSW/assets/images/optimized/rev-998568d/meliuscyber.com/wp-content/uploads/2023/01/black.png"
+     alt="">
+
+</marquee>
+</div>
+
+<!-- 4- Simple Affordable Cyber Security wala part -->
+
+  <div class="page3">
+    <h1 style="align-items: center; display: flex; justify-content: center;">Simple Affordable Cyber Security</h1>
+    <h2 style="align-items: center; display: flex; justify-content: center;">The easiest way to protect your business</h2>
+    <h3 style="align-items: center; display: flex; justify-content: center;">Every industry has different aims and
+      challenges. That’s why we’ve designed Cyber Safe to respond to how you work, and what you value.</h3>
+  </div>
+
+
+   <!-- 5-contact page  -->
+
+  <div class="PG5">
+    <div class="pannel">
+      <img src="images/CP5_img1.webp" alt="Image 1">
+      <h2>Identify Cyber Threats in Hours</h2>
+      <p>24/7 protection through automation. Reduce your RISK profile all year round and validate your cyber insurance</p>
+      <button>Learm More</button>
+    </div>
+
+    <div class="pannel">
+      <img src="images/CP5_img2.webp" alt="Image 1">
+      <h2>Cyber Security Experts at Your Service</h2>
+      <p>If we detect a vulnerability within your business we will alert you straight away. You don't need an in house team of experts.</p>
+      <button>Learm More</button>
+    </div>
+
+    <div class="pannel">
+      <img src="images/CP5_img3.webp" alt="Image 1">
+      <h2>Simple Cyber Certification</h2>
+      <p>We help you achieve government standard cyber security certifications.You will be also Getting the certified that has never been easier to get.</p>
+      <button>Learm More</button>
+    </div>
+
+    <div class="pannel">
+      <img src="images/CP5_img4.webp" alt="Image 1">
+      <h2>Save Time and Money</h2>
+      <p>Reduce your cost through automation and the time your team spends on cyber security. You can also Prices are designed with SMEs in mind.</p>
+      <button>Learm More</button>
+    </div>
+  </div>
+
+
+  <!-- 6 Book a free consultation with a Cyber Safe expert -->
+  <div class="wrapper">
+    <div class="main-section">
+
+        <!-- <img src="./images/image-1.png" alt="" class="img1">
+        <img src="./images/image-2.png" alt="" class="img2"> -->
+
+        <div class="container">
+
+            <!-- <img src="./images/image-1.png" alt="" class="img1">
+            <img src="./images/image-2.png" alt="" class="img2"> -->
+
+
+            <div class="left-part">
+                <img src="./images/image-1.png" alt="" class="img1">
+                <img src="./images/image-2.png" alt="" class="img2">
+
+                <h2>Book a free consultation with a Cyber Safe expert</h2>
+                <Br>
+                <p>Our experts can discuss penetration testing, web or mobile application pen testing, continuous protection, and all levels of certification.</p>
+                <br>
+                <p>Contact our cyber team to discuss any and all of your cyber needs.</p>
+            </div>
+
+
+
+            <div class="right-part">
+
+                <p>Fill in the form below and one of the Cyber Safe experts will be in touch.</p>
+
+
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <div>
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="">
+                            <label for="subject">Subject<span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="agree-checkbox">
+                    <input type="checkbox" id="agree-checkbox" required>
+                    I agree to the <a href="#" target="_blank">Privacy Policy</a>
+                </label>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit">Send Message</button>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    <!-- 7- Who can use Cyber Safe? wala part -->
+ 
+
+
+
+
+
+    <!-- 8-side by side text -->
+
+    <div class="SlideText">
+      <main>
+          <h3 class="slide">Not only did Melius achieve what several other suppliers told us was impossible, but they also provided us with ongoing support and help outside of the initial project. Melius were an essential part of several projects and are our go-to resource when we need support and guidance</h3>
+          <h3 class="slide">We're very happy with Cyber Safe. Having the ability to keep track of our cyber security controls in line with Cyber Essentials is great and will make re-certification quicker and easier in future - we feel we are in safe hands, our customers risk profile is paramount to us"</h3>
+          <h3 class="slide">Melius Cyber has been an essential part of our strategic growth plan. Ensuring our organisation is cyber safe is a priority, and their services have aided us in achieving that".</h3>
+      </main>
+      <div class="nav">
+          <button onclick="goPrev()">Prev</button>
+          <button onclick="goNext()">Next</button>
+      </div>
+  </div>
+  <script src="./js/slidetext.js"></script>
+
+
+
+
+
+   <!--  9- footer section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="./js/navbar.js">
+    
+   </script>
+</body>
+</html>

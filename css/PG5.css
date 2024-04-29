@@ -1,0 +1,89 @@
+#myDiv {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+
+.pannel-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    margin-top: 5vh;
+}
+
+.pannel {
+    width: 23%;
+    padding: 0;
+    text-align: center;
+}
+
+.pannel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    border: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* .pannel h2 {
+    text-align: left;
+    font-size: 22px;
+    margin: 10px 10px 0 10px;
+} */
+
+.pannel h2 {
+    margin-top: 10px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+    text-align: center; /* Center-align the h2 tag */
+}
+
+.pannel p {
+    font-size: 14px;
+    margin: 10px;
+    text-align: left;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.PG5 {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Align items vertically in the center */
+    padding: 0 20px; /* Adjust as needed */
+}
+
+.pannel {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; /* Adjust as needed */
+}
+
+
+/* Media Queries for responsiveness */
+@media only screen and (min-width: 768px) {
+    .pannel-container {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .pannel {
+        max-width: calc(25% - 40px); /* Adjust margin between panels */
+    }
+}
