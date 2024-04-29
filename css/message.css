@@ -146,18 +146,28 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: rgb(50, 49, 244);
+    background: linear-gradient(to bottom, rgb(50, 49, 244), rgb(40, 39, 204));
     color: #fff;
     padding: 12px 20px;
     border: none;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: rgb(40, 39, 204);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+/* Button Focus Style */
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(50, 49, 244, 0.4);
+}
+
+
 
 
 /* @media screen and (max-width: 600px) {
